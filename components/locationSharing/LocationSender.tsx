@@ -130,20 +130,18 @@ export default function LocationSender({
   };
 
   return (
-    <Card className="border-[#319795]/20 shadow-md">
+    <Card className="border-[#3f21b2]/20 shadow-md">
       <CardHeader>
-        <CardTitle className="flex items-center gap-2 text-[#319795]">
+        <CardTitle className="flex items-center gap-2 text-[#3f21b2]">
           <Send className="w-5 h-5" />
           Share Your Location
         </CardTitle>
-        <CardDescription>
-          Input your details and broadcast your location
-        </CardDescription>
+        <CardDescription>Input your details</CardDescription>
       </CardHeader>
 
       <CardContent className="space-y-5">
         <div className="space-y-2">
-          <Label htmlFor="userName">Username / Email</Label>
+          <Label htmlFor="userName"> Email</Label>
           <Input
             id="userName"
             type="text"
@@ -189,16 +187,16 @@ export default function LocationSender({
             variant="outline"
             onClick={fetchCurrentLocation}
             disabled={isGettingLocation}
-            className="flex items-center gap-2 border-[#319795]/30"
+            className="flex items-center gap-2 border-[#3f21b2]/30"
           >
-            <Navigation className="w-4 h-4 text-[#319795]" />
+            <Navigation className="w-4 h-4 text-[#3f21b2]" />
             {isGettingLocation ? "Getting..." : "Use My Location"}
           </Button>
 
           <Button
             onClick={handleSendLocation}
             // disabled={!isSendEnabled || isSending || !isConnected}
-            className="flex items-center gap-2 bg-[#319795] hover:bg-[#287c7c] text-white shadow-md transition"
+            className="flex items-center gap-2 bg-[#3f21b2] hover:bg-[#287c7c] text-white shadow-md transition"
           >
             <Send className="w-4 h-4" />
             {isSending ? "Sending..." : "Send Now"}
