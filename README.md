@@ -40,8 +40,6 @@ npm start
 
 - **Live Site**: [https://location-sharing-nextjs.vercel.app/]
 
-## 🎯 Assessment Tasks Completed
-
 ## ⚠️ Limitations & Trade-offs
 
 - **CORS**: SignalR hub may require CORS configuration for production
