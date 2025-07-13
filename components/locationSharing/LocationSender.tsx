@@ -196,7 +196,7 @@ export default function LocationSender({
           <Button
             onClick={handleSendLocation}
             // disabled={!isSendEnabled || isSending || !isConnected}
-            className="flex items-center gap-2 bg-[#3f21b2] hover:bg-[#287c7c] text-white shadow-md transition"
+            className="flex items-center gap-2 bg-[#3f21b2] hover:bg-[#4d39a7] text-white shadow-md transition"
           >
             <Send className="w-4 h-4" />
             {isSending ? "Sending..." : "Send Now"}
